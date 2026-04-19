@@ -8,6 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.*
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.*
@@ -40,6 +43,20 @@ fun NewsListScreen(
                         "Daily News",
                         fontWeight = FontWeight.Bold
                     ) 
+                },
+                actions = {
+                    var showError by remember { mutableStateOf(false) }
+                    IconButton(onClick = { 
+                        showError = !showError
+                        viewModel.toggleError(showError)
+                        viewModel.loadNews()
+                    }) {
+                        Icon(
+                            imageVector = if (showError) Icons.Default.Warning else Icons.Default.Check,
+                            contentDescription = "Toggle Error Simulation",
+                            tint = if (showError) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary
+                        )
+                    }
                 },
                 scrollBehavior = scrollBehavior
             )
