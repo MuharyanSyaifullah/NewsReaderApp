@@ -71,3 +71,6 @@ Project ini mencakup implementasi praktis dari:
 - State management di Jetpack Compose.
 - Implementasi Design System Material 3.
 - Penerapan Clean Architecture sederhana.
+
+## Link Video Demo
+https://drive.google.com/file/d/1-qFT4322hUL8Fdg1ctwAdvT16SaDvJcC/view?usp=sharing 
