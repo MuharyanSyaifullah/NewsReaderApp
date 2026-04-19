@@ -24,6 +24,10 @@ class NewsViewModel(
         loadNews()
     }
 
+    fun toggleError(enabled: Boolean) {
+        repository.shouldSimulateError = enabled
+    }
+
     fun loadNews() {
         viewModelScope.launch {
             _uiState.value = NewsUiState.Loading
