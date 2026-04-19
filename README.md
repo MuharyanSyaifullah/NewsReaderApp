@@ -2,7 +2,7 @@
 
 **Nama:** Muharyan Syaifullah  
 **NIM:** 123140045  
-**Mata Kuliah:** Pemrograman Aplikasi Mobile  
+**Mata Kuliah:** Pengembangan Aplikasi Mobile  
 
 ## Deskripsi
 NewsReaderApp adalah aplikasi Android modern yang dibangun menggunakan **Jetpack Compose** untuk memenuhi **Tugas Praktikum Minggu 6**. Aplikasi ini mendemonstrasikan integrasi REST API dengan arsitektur yang bersih menggunakan Repository Pattern.
@@ -52,9 +52,9 @@ com.example.newsreaderapp
 | :---: | :---: | :---: |
 | ![Loading](loading-state.png) | ![Success](success-state.png) | ![Error](error-state.png) |
 
-| Detail Screen | Refresh State |
-| :---: | :---: |
-| ![Detail](detail-screen.png) | ![Refresh](refresh-state.png) |
+| Refresh State |
+| :---: |
+| ![Refresh](refresh-state.png) |
 
 ---
 
